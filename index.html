@@ -149,7 +149,15 @@ width:110px;
 height:110px;
 }
 
+#tsparticles{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
 }
+
 </style>
 </head>
 
@@ -431,6 +439,22 @@ MR. NIKHIL GAMING
 </p>
 
 </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
+<div id="tsparticles"></div>
+
+<script>
+tsParticles.load("tsparticles",{
+particles:{
+number:{value:60},
+color:{value:"#00aaff"},
+links:{enable:true,color:"#00aaff"},
+move:{enable:true,speed:2},
+size:{value:3}
+},
+background:{color:"#0a0a0a"}
+});
+</script>
 </body>
 </html>
